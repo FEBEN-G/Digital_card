@@ -10,7 +10,9 @@ import countdownBg from '../assets/union.jpg';
 import CountdownTimer from './CountdownTimer';
 import WeddingCalendar from './WeddingCalendar';
 import PhotoGallery from './PhotoGallery';
+import RsvpSection from './RsvpSection';
 import { useTilt } from '../useTilt';
+import tiriMark from '../assets/tiri-mark.svg';
 
 function renderInvitationLine(line) {
   const parts = line.split('**');
@@ -392,6 +394,9 @@ const InvitationCard = ({ isOpen, isRevealed }) => {
         </motion.div>
       </div>
 
+      {/* RSVP, share QR and guest photos — replies go to the couple's Tiri invitation */}
+      <RsvpSection />
+
       {/* Page 7: Calendar Section */}
       <div className="calendar-page-section">
         <div className="calendar-bg-container">
@@ -440,14 +445,14 @@ const InvitationCard = ({ isOpen, isRevealed }) => {
         </motion.div>
 
         <motion.div
-          className="selah-ad"
+          className="tiri-ad"
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <p className="selah-line">{t('selah_presents')}</p>
-          <a className="selah-contact" href="tel:+251937318894">{t('selah_contact')}</a>
+          <p className="tiri-line"><img className="tiri-mark" src={tiriMark} alt="" />{t('tiri_presents')}</p>
+          <a className="tiri-contact" href="tel:+251937318894">{t('tiri_contact')}</a>
         </motion.div>
       </div>
 

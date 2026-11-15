@@ -722,7 +722,7 @@
   width: 100%;
   min-height: 100vh;
   background:
-    radial-gradient(ellipse at center, #fffaf3 0%, #f4e7d4 58%, #e6d2b8 100%);
+    radial-gradient(ellipse at center, #ffffff 0%, #ffffff 62%, #f7f4ef 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -925,9 +925,10 @@
   text-transform: uppercase;
   color: #A68B5B;
   opacity: 0.8;
+  margin-bottom: 72px;
 }
 
-.selah-ad {
+.tiri-ad {
   position: absolute;
   left: 24px;
   right: 24px;
@@ -939,13 +940,21 @@
   text-align: center;
 }
 
-.selah-line,
-.selah-contact {
+.tiri-mark {
+  height: 0.95em;
+  width: auto;
+  margin-right: 0.45em;
+  vertical-align: -0.12em;
+  opacity: 0.8;
+}
+
+.tiri-line,
+.tiri-contact {
   margin: 0;
   font-weight: 400;
 }
 
-.selah-line {
+.tiri-line {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.05rem;
@@ -953,7 +962,7 @@
   color: #8d7b68;
 }
 
-.selah-contact {
+.tiri-contact {
   font-family: var(--font-sans);
   font-size: 0.7rem;
   letter-spacing: 0.16em;
@@ -962,12 +971,12 @@
   text-decoration: none;
 }
 
-.selah-contact:hover {
+.tiri-contact:hover {
   color: #8d734c;
 }
 
 @media (max-width: 520px) {
-  .selah-ad {
+  .tiri-ad {
     bottom: calc(92px + env(safe-area-inset-bottom, 0px));
   }
 }
@@ -979,7 +988,7 @@
 }
 
 /* Soft fades so sections meet without a hard line or a repeating wave */
-.hero-section { --seam: #f3e6d2; }
+.hero-section { --seam: #ffffff; }
 .message-page-section { --seam: #F9F7F2; }
 .verse-section { --seam: #FDFBF7; --cap: #F9F7F2; background-color: #f6efe4; }
 .final-countdown-section { --seam: #F9F7F2; }
